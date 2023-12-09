@@ -11,16 +11,16 @@ public class Task3 {
         int secondDigitFromUser = getSecondDigitFromUser(scanner);
 
         boolean isXGratherThanY = isXGratherThanY(firstDigitFromUser, secondDigitFromUser);
-        System.out.println("Is X grather than Y: "+isXGratherThanY);
+        System.out.println("Is X grather than Y: " + isXGratherThanY);
 
         boolean isXMultiplyBy3IsGratherThanY = isXMultiplyBy3IsGratherThanY(firstDigitFromUser, secondDigitFromUser);
-        System.out.println("Is X*3 grather than Y: "+isXMultiplyBy3IsGratherThanY);
+        System.out.println("Is X*3 grather than Y: " + isXMultiplyBy3IsGratherThanY);
 
         boolean pointCMethodResult = pointCMethod(firstDigitFromUser, secondDigitFromUser);
-        System.out.println("Method C result: "+pointCMethodResult);
+        System.out.println("Method C result: " + pointCMethodResult);
 
         boolean pointDMethodResult = pointDMethod(firstDigitFromUser, secondDigitFromUser);
-        System.out.println("Method D result: "+pointDMethodResult);
+        System.out.println("Method D result: " + pointDMethodResult);
     }
 
     private static boolean pointDMethod(int firstDigitFromUser, int secondDigitFromUser) {
@@ -28,13 +28,7 @@ public class Task3 {
     }
 
     private static boolean pointCMethod(int firstDigitFromUser, int secondDigitFromUser) {
-        boolean result;
-
-        if ((secondDigitFromUser++ < ++firstDigitFromUser) && (-- firstDigitFromUser < secondDigitFromUser++)) {
-            result = true;
-        } else result = false;
-
-        return result;
+        return ((secondDigitFromUser++ < ++firstDigitFromUser) && (--firstDigitFromUser < secondDigitFromUser++));
     }
 
     private static boolean isXMultiplyBy3IsGratherThanY(int firstDigitFromUser, int secondDigitFromUser) {
