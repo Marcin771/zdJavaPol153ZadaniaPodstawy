@@ -20,26 +20,26 @@ public class Task1 {
         // binary
         // 0b przed liczbą interpretuje to jako binary
         //01010011  01000100 01000001
-        char s2 = 0b01010011;
-        char d2 = 0b01000100;
-        char a2 = 0b01000001;
+        char s = 0b01010011;
+        char d = 0b01000100;
+        char a = 0b01000001;
 
-        System.out.print(s2);
-        System.out.print(d2);
-        System.out.print(a2);
+        System.out.print(s);
+        System.out.print(d);
+        System.out.print(a);
     }
 
     private static void displayWordUsingHexa() {
         // hex 16stkowy zapis
         // 0x traktuje to jako system szesnastkowy
         //53 44 41
-        char s1 = 0x53;
-        char d1 = 0x44;
-        char a1 = 0x41;
+        char s = 0x53;
+        char d = 0x44;
+        char a = 0x41;
 
-        System.out.print(s1);
-        System.out.print(d1);
-        System.out.print(a1);
+        System.out.print(s);
+        System.out.print(d);
+        System.out.print(a);
     }
 
     private static void displayWordUsingDecimal() {
