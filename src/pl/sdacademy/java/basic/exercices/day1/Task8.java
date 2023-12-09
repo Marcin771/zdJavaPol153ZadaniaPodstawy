@@ -1,6 +1,6 @@
 package pl.sdacademy.java.basic.exercices.day1;
 
-public class Task6 {
+public class Task8 {
 
     public static void main(String[] args) {
         int zakresPoczątek = 0;
