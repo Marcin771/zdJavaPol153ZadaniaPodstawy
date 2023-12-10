@@ -1,7 +1,5 @@
 package pl.sdacademy.java.basic.exercices.day2;
 
-import java.util.PrimitiveIterator;
-
 public class Task1 {
 
     private static char DEFAULT_CHAR = '\u0000';
@@ -25,13 +23,11 @@ public class Task1 {
         wywołanie metody equals na obiekcie input też wywali exception
         bo wykonujmy metode na nullowym obiekcie
         */
-
-        if (input == null || input.isBlank()) {
-            System.out.println("Wrong input!");
-            return DEFAULT_CHAR;
-
+        if (StringValidator.isValid(input)) {
+            int lastPosition = input.length() - 1;
+            return input.charAt(lastPosition);
         }
-        int lastPosition = input.length() - 1;
-        return input.charAt(lastPosition);
+        System.out.println("Wrong input!");
+        return DEFAULT_CHAR;
     }
 }
