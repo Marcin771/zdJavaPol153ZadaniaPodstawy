@@ -28,6 +28,7 @@ public class Task13 {
         ) {
             sum += element;
         }
+        return sum;
     }
 
     private static int getMinValue(int[] ints) {
