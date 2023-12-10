@@ -31,12 +31,10 @@ public class Task12 {
     }
 
     private static char checkCharRange(int shift, char currentChar) {
-        char przykladowyChar;
         if (currentChar + shift > RANGE_END) {
-            przykladowyChar = ((char) (RANGE_START + Math.abs(RANGE_END - (currentChar + shift)) - 1));
+            return (char) (RANGE_START + Math.abs(RANGE_END - (currentChar + shift)) - 1);
         } else {
-            przykladowyChar = ((char) (currentChar + shift));
+            return (char) (currentChar + shift));
         }
-        return przykladowyChar;
     }
 }
