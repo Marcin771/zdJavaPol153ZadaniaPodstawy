@@ -14,7 +14,6 @@ public class Task12 {
         System.out.println("Result:          " + result);
         System.out.println("Expected result: " + expectedResult);
     }
-
     private static String cesarCipher(String input, int shift) {
 
         if (input.contains(" ")) {
@@ -29,7 +28,6 @@ public class Task12 {
         }
         return result.toString();
     }
-
     private static char checkCharRange(int shift, char currentChar) {
         if (currentChar + shift > RANGE_END) {
             return (char) (RANGE_START + Math.abs(RANGE_END - (currentChar + shift)) - 1);
