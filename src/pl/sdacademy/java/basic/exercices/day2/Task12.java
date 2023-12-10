@@ -34,7 +34,7 @@ public class Task12 {
         if (currentChar + shift > RANGE_END) {
             return (char) (RANGE_START + Math.abs(RANGE_END - (currentChar + shift)) - 1);
         } else {
-            return (char) (currentChar + shift));
+            return (char) (currentChar + shift);
         }
     }
 }
