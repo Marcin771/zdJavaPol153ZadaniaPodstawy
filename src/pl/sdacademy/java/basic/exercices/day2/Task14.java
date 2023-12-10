@@ -19,6 +19,7 @@ public class Task14 {
         }
         int[] newArray = new int[counter];
         int newArrayCounter = 0;
+        // mozna uzyc tez pętle foreach
         for (int i = 0; i < ints.length; i++) {
             if (ints[i] < 0) {
                 newArray[newArrayCounter] = ints[i];
