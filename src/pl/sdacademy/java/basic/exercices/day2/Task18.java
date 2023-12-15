@@ -8,6 +8,10 @@ public class Task18 {
         int[] generatedArray = generateArray();
         System.out.println("Generated array: " + Arrays.toString(generatedArray));
         int[] intsResult = countOccurrences(generatedArray);
+        printResultList(intsResult);
+    }
+
+    private static void printResultList(int[] intsResult) {
         for (int i = 0; i < intsResult.length; i++) {
             System.out.println(i + ": " + intsResult[i]);
         }
