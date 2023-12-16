@@ -33,8 +33,6 @@ public class Task7 {
         int sum = 0;
         int rows = array.length;
         int cols = array[0].length;
-
-
         for (int i = 0; i < rows; i++) {
             sum += array[i][i];
             sum += array[i][cols - 1 - 1];
