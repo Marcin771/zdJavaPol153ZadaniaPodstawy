@@ -18,6 +18,6 @@ public class Task5 {
         new Scanner(System.in).nextLine();
         LocalDateTime localTime2 = LocalDateTime.now();
         long duration = Duration.between(localTime2, localTime1).toSeconds();
-        System.out.println("Total time: " + Math.abs(duration) + " secoonds.");
+        System.out.println("Total time: " + Math.abs(duration) + " sec");
     }
 }
