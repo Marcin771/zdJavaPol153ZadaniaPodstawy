@@ -4,19 +4,22 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Task1 {
+
+    private static final String EMAIL_REGEX_FORMAT = "[a-zA-Z0-9]+@[a-z]+(.[a-z]+)*";
+
     /*
-    przed @"
-    małe litery
-    wielkie litery
-    cyfry
-    bez znaków specjalnych
+            przed @"
+            małe litery
+            wielkie litery
+            cyfry
+            bez znaków specjalnych
 
-    @
+            @
 
-    po @:
-    małe litery
-    sda@com sda@com.pl  sda@programowanie.com.pl
-    */
+            po @:
+            małe litery
+            sda@com sda@com.pl  sda@programowanie.com.pl
+            */
     public static void main(String[] args) {
         System.out.println(isCorrectEmailFormat("s@c"));
         System.out.println(isCorrectEmailFormat("1@c"));
@@ -32,7 +35,7 @@ public class Task1 {
     }
 
     private static boolean isCorrectEmailFormat(String email) {
-        String regex = "[a-zA-Z0-9]+@[a-z]+(.[a-z]+)*";
+        String regex = EMAIL_REGEX_FORMAT;
 //        String regex2 = "[\\w\\d]+@[\\w]+(.[a-z]+)*";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(email);
