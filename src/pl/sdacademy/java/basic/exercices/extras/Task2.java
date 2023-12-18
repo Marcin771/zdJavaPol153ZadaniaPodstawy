@@ -8,7 +8,7 @@ public class Task2 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("First char:");
         String firstChar = scanner.nextLine();
-        System.out.print("First char:");
+        System.out.print("Second char:");
         String secondChar = scanner.nextLine();
         int distanceBetwenChars = Math.abs(firstChar.charAt(0) - secondChar.charAt(0));
         System.out.println("Distance: " + distanceBetwenChars);
