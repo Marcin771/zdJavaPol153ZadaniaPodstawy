@@ -11,7 +11,6 @@ public class Task3 {
         System.out.println(isInputCorrect("1234,1234"));
         System.out.println(isInputCorrect("1234a1234"));
         System.out.println(isInputCorrect("123,123"));
-
     }
 
     private static boolean isInputCorrect(String inputString) {

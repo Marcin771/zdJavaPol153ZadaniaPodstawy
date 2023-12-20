@@ -11,11 +11,8 @@ public class Task6 {
     private static final String DATE_TIME_FORMAT = "yyyy-MM-dd HH:mm:ss";
 
     public static void main(String[] args) {
-
         howManyDaysLeft();
-
     }
-
     private static void howManyDaysLeft() {
         System.out.println("Please insert date [in format [yyyy-MM-dd HH:mm:ss]");
         String inputDate = new Scanner(System.in).nextLine();

@@ -6,7 +6,6 @@ import java.util.regex.Pattern;
 public class Task1 {
 
     private static final String EMAIL_REGEX_FORMAT = "[a-zA-Z0-9]+@[a-z]+(.[a-z]+)*";
-
     /*
             przed @"
             małe litery
@@ -36,7 +35,6 @@ public class Task1 {
 
     private static boolean isCorrectEmailFormat(String email) {
         String regex = EMAIL_REGEX_FORMAT;
-//        String regex2 = "[\\w\\d]+@[\\w]+(.[a-z]+)*";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(email);
         return matcher.matches();
