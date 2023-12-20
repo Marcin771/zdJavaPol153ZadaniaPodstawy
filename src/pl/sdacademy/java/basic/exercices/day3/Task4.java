@@ -12,7 +12,6 @@ public class Task4 {
         System.out.println(metoda("aaaaaa psik"));
         System.out.println(metoda("psik"));
     }
-
     private static boolean metoda(String input) {
         String regex = WORD_REGEX_FORMAT;
         Pattern pattern = Pattern.compile(regex);
